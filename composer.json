@@ -1,0 +1,18 @@
+{
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "require-dev": {
+        "phan/phan": "^1.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Example\\": "example/"
+        }
+    },
+    "scripts": {
+        "phan": [
+            "PHAN_DISABLE_XDEBUG_WARN=1 vendor/bin/phan"
+        ]
+    }
+}
